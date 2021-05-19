@@ -25,13 +25,34 @@ export default function ContactUs() {
 
   return (
     <div className="form-container">
-      <form onSubmit={sendEmail} class="contact-form">
-        <header>Want to Book Kimble? Send an Email!</header>
-        <input type="text" placeholder="name" name="name" />
-        <input type="text" placeholder="email" name="email" />
-        <input type="text" placeholder="subject" name="subject" />
-        <textarea placeholder="message" name="message" />
-        <input type="submit" value="Send" />
+      <form onSubmit={sendEmail} className="contact-form">
+        <header className="form-header">
+          Want to Book Kimble? Send an Email!
+        </header>
+        <input
+          type="text"
+          placeholder="name"
+          className="name-field"
+          name="name"
+        />
+        <input
+          type="text"
+          placeholder="email"
+          className="email-field"
+          name="email"
+        />
+        <input
+          type="text"
+          placeholder="subject"
+          className="subject-field"
+          name="subject"
+        />
+        <textarea
+          placeholder="message"
+          className="message-field"
+          name="message"
+        />
+        <input type="submit" className="send-button" value="Send" />
       </form>
     </div>
   );

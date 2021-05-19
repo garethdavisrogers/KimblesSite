@@ -34,10 +34,16 @@ class App extends React.Component {
         </div>
         <Playlist tracks={tracks} />
         <ContactForm />
-        <div>
-          <FaInstagramSquare />
-          <FaFacebookSquare />
-          <img src={DistroKid} />
+        <div className="social-media-icons">
+          <a href="https://www.instagram.com/kimble_crane_music/?hl=en">
+            <FaInstagramSquare size="3em" />
+          </a>
+          <a href="https://facebook.com/kimblecranemusic">
+            <FaFacebookSquare size="3em" />
+          </a>
+          <a href="https://distrokid.com/hyperfollow/kimblecrane/vigilante">
+            <img className="distro-kid" src={DistroKid} />
+          </a>
         </div>
       </div>
     );

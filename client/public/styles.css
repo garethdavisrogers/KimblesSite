@@ -47,11 +47,57 @@ body {
 }
 
 .form-container {
+  margin-top: 10vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+.form-header {
+  font-size: 4.5vw;
+  text-align: center;
+  padding: 5vh;
+  color: black;
+  font-weight: bold;
 }
 
 .contact-form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  background-color: cadetblue;
+  border-radius: 5px;
+  padding: 5vw;
+  gap: 2vh;
+}
+
+.name-field,
+.email-field,
+.subject-field {
+  height: 8vh;
+  font-size: 3vw;
+}
+
+.message-field {
+  height: 14vh;
+  font-size: 3vw;
+}
+
+.send-button {
+  height: 8vh;
+  font-size: 2vw;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  gap: 1vw;
+}
+
+.distro-kid {
+  height: 2.6em;
+  border-radius: 5px;
 }
