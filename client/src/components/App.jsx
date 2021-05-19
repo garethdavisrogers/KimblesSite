@@ -1,11 +1,6 @@
 import React from "react";
 import Playlist from "./Playlist";
 import ContactForm from "./ContactForm";
-import Entertainer from "../../public/Entertainer.wav";
-import SelfAware from "../../public/Self_aware.wav";
-import InTheGray from "../../public/In_the_gray.wav";
-import Rise from "../../public/Rise.wav";
-import Vigilante from "../../public/Vigilante.wav";
 import KimbleProfilePic from "../../public/kimble_photo1.jpg";
 import DistroKid from "../../public/distrokid-button.png";
 import { FaInstagramSquare, FaFacebookSquare } from "react-icons/fa";
@@ -16,11 +11,31 @@ class App extends React.Component {
 
     this.state = {
       tracks: [
-        { name: "In The Gray", track: InTheGray },
-        { name: "Entertainer", track: Entertainer },
-        { name: "Vigilante", track: Vigilante },
-        { name: "Rise", track: Rise },
-        { name: "Self Aware", track: SelfAware },
+        {
+          name: "In The Gray",
+          track:
+            "https://res.cloudinary.com/garethssites/video/upload/v1621466976/KimblesTracks/In_the_gray_xe0n5w.wav",
+        },
+        {
+          name: "Entertainer",
+          track:
+            "https://res.cloudinary.com/garethssites/video/upload/v1621466961/KimblesTracks/Entertainer_rb7yrf.wav",
+        },
+        {
+          name: "Vigilante",
+          track:
+            "https://res.cloudinary.com/garethssites/video/upload/v1621466983/KimblesTracks/Vigilante_aoeds0.wav",
+        },
+        {
+          name: "Rise",
+          track:
+            "https://res.cloudinary.com/garethssites/video/upload/v1621466968/KimblesTracks/Rise_lx5oi4.wav",
+        },
+        {
+          name: "Self Aware",
+          track:
+            "https://res.cloudinary.com/garethssites/video/upload/v1621466980/KimblesTracks/Self_aware_wpblcb.wav",
+        },
       ],
     };
   }
